@@ -6,19 +6,26 @@ A collection of production-ready, multi-cloud Terraform modules built for AWS (p
 
 ## Table of Contents
 
-- [Overview](#overview)
-- [Project Structure](#project-structure)
-- [Modules](#modules)
-  - [Networking](#networking)
-  - [Compute](#compute)
-  - [Kubernetes](#kubernetes)
-  - [Database](#database)
-- [Environments](#environments)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Variables Reference](#variables-reference)
-- [Requirements](#requirements)
-- [Contributing](#contributing)
+- [Terraform Reusable Modules](#terraform-reusable-modules)
+  - [Table of Contents](#table-of-contents)
+  - [Overview](#overview)
+  - [Project Structure](#project-structure)
+  - [Modules](#modules)
+    - [Networking](#networking)
+    - [Compute](#compute)
+    - [Kubernetes](#kubernetes)
+    - [Database](#database)
+  - [Environments](#environments)
+  - [Getting Started](#getting-started)
+    - [Prerequisites](#prerequisites)
+    - [Initialize the project](#initialize-the-project)
+    - [Deploy an environment](#deploy-an-environment)
+  - [Usage](#usage)
+    - [Calling a module directly](#calling-a-module-directly)
+  - [Variables Reference](#variables-reference)
+    - [Root Variables (`variables.tf`)](#root-variables-variablestf)
+  - [Requirements](#requirements)
+  - [Contributing](#contributing)
 
 ---
 
@@ -215,4 +222,4 @@ module "networking" {
 
 ---
 
-*Built by Haricharan Tej Tankasala — Infrastructure as Code Portfolio Project*
+*Built by Haricharantej Tankasala — Infrastructure as Code(Iac)*
