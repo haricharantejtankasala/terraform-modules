@@ -11,6 +11,7 @@ A collection of production-ready, multi-cloud Terraform modules built for AWS (p
   - [Overview](#overview)
   - [Project Structure](#project-structure)
   - [Modules](#modules)
+    - [IAM](#iam)
     - [Networking](#networking)
     - [Compute](#compute)
     - [Kubernetes](#kubernetes)
@@ -46,6 +47,9 @@ terraform-modules/
 ├── .terraform-version
 │
 ├── modules/
+│   ├── iam/
+│   │   └── aws/                 # Roles, policies, users, groups, instance profiles
+│   │
 │   ├── networking/
 │   │   └── aws/                 # VPC, subnets, IGW, NAT gateway, route tables
 │   │
@@ -67,6 +71,24 @@ terraform-modules/
 ---
 
 ## Modules
+
+### IAM
+
+Manages AWS Identity and Access Management resources. Designed as a foundational module — other modules (Compute, EKS, Database) depend on roles and instance profiles created here.
+
+| Resource | Description |
+|----------|-------------|
+| IAM Roles | Roles with configurable trust policies for AWS services or cross-account access |
+| Managed Policy Attachments | Attach AWS-managed or customer-managed policies to roles |
+| Inline Role Policies | Custom inline policies scoped to a specific role |
+| Instance Profiles | EC2 instance profiles wrapping IAM roles |
+| Standalone Policies | Reusable customer-managed policies |
+| IAM Users | Service or human users with optional group membership |
+| IAM Groups | User groups with managed policy attachments |
+
+> **Status:** In progress
+
+---
 
 ### Networking
 
